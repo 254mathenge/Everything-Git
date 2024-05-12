@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything Git Blog</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Everything Git</h1>
+      </div>
+
+      <div>
+        <h2>1. Getting Started</h2>
+        <p>
+          Welcome to my blog! Today we are embarking on an exciting journey of
+          learning how to maneuver through GIT.Before everything else set up
+          your development environment and create all the necessary files and
+          folders.
+        </p>
+      </div>
+      <div>
+        <h2>2.What is git</h2>
+        <p>
+          Git is a powerful version control system that allows developers to
+          track changes, collaborate, and manage software projects. Git Bash is
+          a command-line interface (CLI) for using Git on Windows systems. To
+          install Git Bash, download the latest version from the official Git
+          website and follow the on-screen instructions. After installation, you
+          can launch Git Bash from the Start menu or by searching for it on your
+          computer. Git Bash provides a Unix-like environment, allowing you to
+          run Git commands and access a variety of tools and utilities.
+        </p>
+      </div>
+      <div>
+        <h2>3.Installing Git</h2>
+        <p>
+          go to
+          <a href="https://git-scm.com/download/win" target="_blank">
+            https://git-scm.com/download/win</a>
+     <p>Once the download is complete, run the Git installer (.exe file) that you downloaded</p>
+      <p><b>Setup Wizard:</b> Follow the instructions in the setup wizard. You can generally accept the default settings unless you have specific preferences to customize.</p>
+<p><b>Choose Components:</b> During the installation process, you'll have the option to choose which components to install. Make sure "Git Bash Here" is selected if you want to use Git from the command line.</p>
+<p><b>Adjusting your PATH environment</b> When prompted, choose the default option "Use Git from the Windows Command Prompt" to add Git to your PATH environment, which allows you to use Git from the command line.</p>
+<p><b>Complete Installation:</b> Once the installation is complete, click "Finish" to exit the setup wizard.
+        </p>
+      
+      </div>
+
+      <div>
+        <h2>4.Configuring Git</h2>
+        <p>
+          1.Open Git Bash and run the<b>
+            git config --global user.name "Your Name"
+          </b>
+          command to set your name for Git commits. 1.Run
+          <b> git config --global user.email "your@email.com"</b> to configure
+          the email address associated with your Git account. 1.Use
+          <b> git config --list</b> to view all your current Git configuration
+          settings and ensure they are correct.
+        </p>
+        <image src="./assets/r-example-1.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>5. Intializing a Git repository</h2>
+        <h3>1.Create a New Repository</h3>
+        <p>
+          Run the git init command in your project directory to initialize a new
+          Git repository and start tracking your files. 2
+        </p>
+        <h3>2.Check Repository Status</h3>
+        <p>
+          Use the <b> git status</b> command to view the current state of your
+          repository, including any untracked or modified files. 3
+        </p>
+        <image src="./assets/git-status.png" width="600px" </image>
+        <h3>Add Files to Staging</h3>
+        <p>
+          Utilize <b> git add.</b> to selectively add files to the staging area,
+          preparing them for the next commit.
+        </p>
+        <image src="./assets/git-add.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>6. Adding files to the staging area</h2>
+        <p>
+          To add files to the Git staging area, use the
+          <b>git add . </b>
+          command followed by the file name or directory. This
+          prepares the changes to be committed to the repository. For example,<b>
+            git add my_file.txt </b >
+            <image src="./assets/git-add-file.png" width="600px"></image>
+          will stage the file "my_file.txt" for the next commit. You can also
+          use wildcards like <b>git add *.txt </b> to stage all text files in
+          the current directory
+        </p>
+        <image src="./assets/git-add-all.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>7. Commiting changes</h2>
+        <p>
+          After adding files to the staging area using <b>git add </b>, the next
+          step is to create a commit. Commits are snapshots of your bbase that
+          you can reference later. To create a commit, use the
+          <b> git commit -m "Commit message" </b>
+          command. The -m flag allows you to provide a short, descriptive
+          message explaining the changes in this commit.
+        </p>
+        <image src="./assets/git-commit.png" width="600px"></image>
+      </div>
+
+      <div>
+        <h2>8. Branches</h2>
+        <p>
+          Branching means you diverge from the main line of development and
+          continue to do work without messing with that main line.The way Git
+          branches is incredibly lightweight, making branching operations nearly
+          instantaneous, and switching back and forth between branches generally
+          just as fast. Unlike many other VCSs, Git encourages workflows that
+          branch and merge often, even multiple times in a day. Understanding
+          and mastering this feature gives you a powerful and unique tool and
+          can entirely change the way that you develop.
+        </p>
+      </div>
+      <div>
+        <h2>Creating a branch</h2>
+        <p>
+          Use the <b>git branch [branch-name]</b> command to create a new
+          branch. This allows you to work on a feature or bug fix independently
+          of the main code base.
+        </p>
+        <image src="./assets/git-branch.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>10. Viewing all branches</h2>
+        <p>
+          Viewing Branches the <b> git branch </b> command lists all branches in
+          your repository. The active branch is marked with an asterisk. You can
+          also use git branch -a to see remote branches.
+        </p>
+      </div>
+      <div>
+        <h2>11. Switching active branches</h2>
+
+        <h3>Checkout a Branch</h3>
+        <p>
+          Use the <b>git checkout [branch-name]</b> command to switch to a
+          different branch. This allows you to work on a specific feature or bug
+          fix separately from the main codebase.
+        </p>
+        <image src="./assets/git-checkout branch.png" width="600px"></image>
+        <h3>Create and Switch Combine</h3>
+        <p>
+          <b>git checkout -b [new-branch-name]</b> to create a new branch and
+          immediately switch to it in one command.
+        </p>
+        <image src="./assets/git-checkout-newbranch.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>12. Merging a branch</h2>
+        <p>
+          Merge a Branch To integrate the changes from a branch into the main
+          bbase, use the <b>git merge [branch-name]</b> command. This will
+          combine the specified branch with the currently active branch.
+        </p>
+        <image src="./assets/git-merge.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>13. Deleting a branch</h2>
+        <p>
+          Delete a Branch Once a branch has been merged, you can safely delete
+          it using the <b>git branch -d [branch-name]</b> command. This will
+          remove the branch from your local repository.
+        </p>
+        <image src="./assets/git-delete-branch.png" width="600px"></image>
+      </div>
+      <div>
+        <h2>14. Next steps</h2>
+        <p>
+          Advancing your Git skills after mastering the basics. By exploring
+          concepts like Git workflows and GitHub collaboration, you can enhance
+          your development process and collaboration with others. These advanced
+          topics enable you to manage project changes more effectively and
+          contribute to projects with greater efficiency. Continuously learning
+          and experimenting with Git and GitHub will empower you to become a
+          more proficient developer and collaborate seamlessly with teams on
+          various projects.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
